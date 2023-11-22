@@ -1,16 +1,132 @@
 Explain each of the following terms in your own words: abstraction, encapsulation, inheritance, polymorphism. Discuss the benefits each can provide when developing OOP software, especially in larger, longer-running projects involving multiple developers. You should include comments regarding how each could affect the maintainability, extensibility, and robustness of the software. You should also include arguments or examples based on your own experience within 1405/1406.
 
 
-a) Abstraction
 
 
 
-b) Encapsulation
+a) Abstraction:
+Abstraction is the process of organizing complex collections of variables and functions into classes. Another definition of abstraction is making parent classes.
+that encapsulates the common fields and methods that multiple classes share. The multiple classes will then inherit these fields and methods from the abstracted.
+class. It makes it easier for the coder to type code because they are able to access functions from the class and use them without having to know how they work.
+Furthermore, abstracting code to classes promotes the reuse of those classes in other projects, making it very useful.
+
+Benefits:
+- You are not required to write the same function multiple times.
+- The code is much more organized and digestible, and allows for easy extensibility.
+- When looking at the classes that have inherited from the abstraction class, you are able to see only the fields and methods that make it unique.
+- The code in these classes is easily reusable (as mentioned above). If you properly build an abstract class with error checking, the class is even more reusable
+  and robust.
+- You do not need to have a thorough understanding of how the classes work, just how to use their methods. This is especially helpful with multiple developers
+  because it allows one coder to use the work of another coder without having to fully understand the intricacies of the functions.
+
+Drawbacks:
+- When having multiple abstraction classes, especially those nested inside each-other, it can be difficult to know/remember what variables and functions have been
+  inherited to a new class.
+- Abstraction, and object-oriented programming (OOP) as a whole, generally causes a slower runtime because of the multiple layers that abstraction promotes.
+- With large amounts of abstraction, and multiple layers, finding errors can become quite difficult.
+- When code relies heavily on abstraction, the maintainability will suffer. If an issue occurs in the original abstracted class, it will cause a chain reaction of
+  errors and require you to fix all the inherited classes.
+- Although abstraction is better organized, it can sometimes take a significant amount of time to encapsulate all the classes affectively.
+
+My experience:
+In my experience, abstraction is a very useful tool that makes my coding much easier to read and more digestible. For example, in tutorial 2 of this course, I used
+multiple abstract classes to define a movable object and a stationary object which made the subclasses better organized and readable.
 
 
 
-c) Inheritance
+
+
+b) Encapsulation:
+Encapsulation is often hand-in-hand with abstraction in that when you abstract code to be more organized, you encapsulate the necessary methods and fields. In
+other words, it is when you make a class with all of its attributes and methods. Furthermore, the purpose of this process is to create a more manageable collection
+of code through restricting the users view of the inner details of the object while providing a convenient interface for the user.
+
+(Since encapsulation and abstraction are closely related, many of their pros and cons are shared.
+I will try not to repeat the same points too much, however some will inevitably share similarities)
+
+Benefits:
+- The increased modularity of encapsulation allows the code to be very well organized, and provides an easy platform for extensibility.
+- Through the use of the defining words "public", "private", and "protected", and through getters and setters, you are able to distinguish which attributes are
+  able to be edited and by whom. Insuring the code maintains proper data integrity.
+- The maintainability of code that uses encapsulation is often increased as you are only required to change the functionality inside a class, as long as the
+  interface remains the same.
+- With larger and longer-running databases (google, facebook, etc.), it is especially helpful when the code is encapsulated because as codebases get bigger, they
+  will inevitably become more difficult to interpret due to their size.
+- Encapsulation is helpful when working with teams for the same reason as abstraction. That is to say, the use of classes helps multiple coders use each-other work
+  fluently without needing to understand every detail.
+- The robustness of a class is increased for the same reason as abstraction.
+
+Drawbacks:
+- Due to classifications increased runtime, encapsulation can unfortunately result in longer waits for applications to run. For example, having getters and
+  setters, while convenient, slowly increase the runtime a small fraction every time they are called. Moreover, if the codebase is rather large, then the increased
+  runtime of just getters and setters alone will become noticeable.
+- With increased code complexity from multiple inherited classes, there is a risk of overuse. A class may have far too many getters and setters making it cluttered
+  and difficult to navigate.
+- (There are more drawbacks, but they are all very closely related to the cons listed in the abstraction drawbacks section)
+
+My experience:
+I have used encapsulation in almost every project for this course (COMP 1406Z) and the previous one (COMP 1405Z) and I find it incredibly useful, especially if I am
+using a piece of code for the first time. One example of encapsulation I have experienced is through the ArrayList class in java that has endless uses that I can
+take advantage of without needing to know the complex details of the methods.
 
 
 
-d) Polymorphism
+
+
+c) Inheritance:
+Inheritance is the process of a subclass gaining the qualities of a superclass. This is done by first creating a superclass that is more general and applicable to
+multiple different subclasses. A common for of inheritance happens between an abstract class and a subclass. For example, an abstract class called "Animal" can
+represent a superclass, while the separate classes "Giraffe", "Dog", and "Hellbender"(This is a real animal look it up!) can represent a subclass. Inheritance
+promotes a hierarchical structure while allowing for specialization within in each subclass respectfully. Every class, even subclasses, have the potential to be
+made into a superclass through inheritance.
+
+Benefits:
+- The key benefit of inheritance is the modularity as it allows a coder to assign relationships between classes in a hierarchy.
+- Inheritance works well with encapsulation, allowing for modularity that increases readability and extensibility.
+- The use of polymorphism allows for different types of classes to instead be treated as one general type and allows for a common basis. This improves
+  maintainability by making it easy to make updates to the superclass.
+- Inheriting classes can make coding quicker since a large portion os the attributes and methods are already written for you. More importantly, this allows large
+  teams to work together by inheriting from the same class but working separately on individual subclasses.
+-
+
+Drawbacks:
+- Due to the nature of inheritance, a subclass is required to follow the presets of the superclass. This can lead to inflexibility if the superclass has a large
+  amount of implementation details. This can be exaggerated through multiple levels of inheritance, possibly resulting in excessive amounts of requirements for
+  new subclasses.
+- In large code bases, maintainability can be affected negatively if a change is made to a class high up in the hierarchy that affects the way subclasses inherit.
+- With more classes in a hierarchy, the robustness will suffer. However, this is always the concern with OOP.
+
+My experience:
+In the past two course, I have not had the chance to use inheritance to the degree that it degrades runtime, however I have been able to experience the
+organizational benefit it offers. For example, as mentioned in the previous example from the abstract section, I was able to use multiple abstract classes and
+inherit their properties. This made my life easier as I could simply look at a subclass and understand the differences with it from the other subclasses of the
+same superclass. The organizational use of inheritance has been well worth the runtime drop-off in my experience (that is to say I have had no issues with
+runtime), although I have not worked with large enough code projects to be able fully understand the runtime issue.
+
+
+
+
+
+d) Polymorphism:
+Polymorphism is the ability to represent multiple different classes as one standard type. This allows for a single interface to be used for many unique classes.
+Furthermore, polymorphism can be achieved through overriding a method from a super class, or by having multiple methods with the same name in one class.
+When multiple methods of inside the same class exist, they must have different parameters. When one of these functions is called, the program will choose which
+function to continue with depending on the inputs. This is most commonly done in the form of constructors. Often a class file will have multiple constructors
+in the case of an initialization of an instance having more, or less, fields.
+
+Benefits:
+- Working with a large team is made easier because of the loose coupling. This allows for different team members to work simultaneously on separate parts of the
+  project without worrying about the dependencies between the components as classification limits the direct interaction between them.
+- Fixing errors and debugging is improved because changing one class does not often affect the others in a way that would reduce maintainability.
+- Polymorphism makes code flexible and extensibile.
+- If a class has been error tested then it is very useful not only for its robustness, but for its reusability.
+
+Drawbacks:
+- With lots of similar functions in one class, the complexity of the code becomes an issue. This is especially prevalent in larger code projects as it can become
+  much harder to trace the flow of the code.
+- As with all elements of OOP, the runtime may be affected by large amounts of polymorphism.
+
+My experience:
+In my experience, polymorphism has been a unique part of classes that I have found advantageous. The most useful part of polymorphism that I have found is the
+ability to have multiple different constructors. For example, in tutorial 1, I used 4 different constructors for my "customer" class allowing me to have a wide
+variety of inputs when I instantiate a customer object.

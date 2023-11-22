@@ -1,0 +1,19 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+V
+&1406-midterm-materials/shortanswer.txt,1\8\1857bdaf231f91a11dcc33d202d7f3b4905e597a
+Å
+Q.idea/sonarlint/securityhotspotstore/1/8/1857bdaf231f91a11dcc33d202d7f3b4905e597a,3\5\350b53e16f1681259e7e240b10154cccacb5417f
+w
+G.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,b\4\b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3
+Å
+Q.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,1\0\10a03f31c4dce92cb371e761ce9429428bb6c176
+w
+G.idea/sonarlint/issuestore/1/8/1857bdaf231f91a11dcc33d202d7f3b4905e597a,6\d\6d34330036653b71368041fca849c32eb5810839
+D
+midterm_COMP1406.iml,f\0\f0fbbb9495d2f55be368adcd518ef11564520b27
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
