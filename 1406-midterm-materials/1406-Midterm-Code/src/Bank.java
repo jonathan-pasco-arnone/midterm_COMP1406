@@ -174,8 +174,10 @@ public class Bank {
         System.out.println("Attempting to add the 11th account (should be false): " + bank1.addAccount(myCheq10));
 
         // Attempting to add an account with identical ID to the same bank
-        ChequingAccount mySav4 = new ChequingAccount("My Man", bank2, 107562); // Rodney's ID is identical
-        System.out.println("\nAttempting to add an account with identical ID to the same bank (should be false): " + bank1.addAccount(myCheq10));
+        // Rodney's ID is identical
+        ChequingAccount mySav4 = new ChequingAccount("My Man", bank2, 107562);
+        System.out.println("\nAttempting to add an account with identical ID to another person at the"
+                + " same bank (should be false): " + bank1.addAccount(mySav4));
 
         /*
         *
