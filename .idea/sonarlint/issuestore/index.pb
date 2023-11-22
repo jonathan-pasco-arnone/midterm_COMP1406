@@ -17,3 +17,11 @@ D
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+f
+61406-midterm-materials/1406-Midterm-Code/src/Bank.java,d\7\d761d9817622624b889d82d9bb3d96ac807b595d
+m
+=1406-midterm-materials/1406-Midterm-Code/src/BankAccount.java,3\b\3b1214856d255f2aad89da340a8ec57e52ce23fb
+q
+A1406-midterm-materials/1406-Midterm-Code/src/ChequingAccount.java,8\7\87830c5415f72fe5a1e5829ae6940c30240f8272
+p
+@1406-midterm-materials/1406-Midterm-Code/src/SavingsAccount.java,8\b\8b83c3704777cdf5f738dfc0d4869803cc4edf32
